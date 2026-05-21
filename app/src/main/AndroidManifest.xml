@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-feature android:name="android.hardware.camera" />
     <application
+        android:name=".GlobalApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -14,6 +15,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Smartpot"
         tools:targetApi="31">
+
+        <activity android:name=".ai.AIActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+
         <activity android:name=".login.Kakao_login_Activity"
             android:screenOrientation="portrait"
             android:exported="true">
@@ -46,21 +52,16 @@
         </activity>
         <activity android:name=".Diary.Plant_Diary_Write_page"
             android:screenOrientation="portrait">
-            <!-- 다른 설정들 -->
         </activity>
 
         <activity android:name=".Fragment_check"
             android:screenOrientation="portrait">
-            <!-- 다른 설정들 -->
         </activity>
         <activity android:name=".hardtest">
-
         </activity>
     </application>
-    <!-- 블루투스 권한 (Android 12 이상) -->
-    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
 
-    <!-- 위치 권한 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 </manifest>

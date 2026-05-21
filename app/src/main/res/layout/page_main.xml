@@ -219,17 +219,17 @@
                             android:layout_height="match_parent"
                             android:paddingTop="10dp"
                             android:layout_weight="1">
-<!--                            id -->
                             <ImageView
                                 android:layout_width="35dp"
                                 android:layout_height="35dp"
                                 android:src="@drawable/icon_main_amount_of_water"/>
 
                             <TextView
+                                android:id="@+id/tv_main_yesterday_water"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:gravity="bottom"
-                                android:text="17 ℃"
+                                android:text="-- %"
                                 android:textColor="#54B22D"
                                 android:textStyle="bold"
                                 android:textSize="16sp"/>
@@ -240,10 +240,11 @@
                                 android:src="@drawable/icon_main_thermometer"/>
 
                             <TextView
+                                android:id="@+id/tv_main_yesterday_temp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:gravity="bottom"
-                                android:text="17 ℃"
+                                android:text="-- ℃"
                                 android:textColor="#54B22D"
                                 android:textStyle="bold"
                                 android:textSize="16sp"/>
@@ -260,10 +261,11 @@
                                 android:src="@drawable/icon_main_amount_of_water"/>
 
                             <TextView
+                                android:id="@+id/tv_main_today_water"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:gravity="bottom"
-                                android:text="17 ℃"
+                                android:text="-- %"
                                 android:textColor="#54B22D"
                                 android:textStyle="bold"
                                 android:textSize="16sp"/>
@@ -274,10 +276,11 @@
                                 android:src="@drawable/icon_main_thermometer"/>
 
                             <TextView
+                                android:id="@+id/tv_main_today_temp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:gravity="bottom"
-                                android:text="17 ℃"
+                                android:text="-- ℃"
                                 android:textColor="#54B22D"
                                 android:textStyle="bold"
                                 android:textSize="16sp"/>
